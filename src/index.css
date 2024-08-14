@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f4f4f4;
+}
+
+main{
+  height: 100vh;
+}
+
+.About, .Contact{
+  padding: 0 1.5rem;
+}
+
+ button {
+  padding: 0.8rem 1.2rem;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+
+/* Header Component */
+
+header {
+  background: #272121;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.logo-container {
+  font-size: 1.4rem;
+  align-self: center;
+}
+/*  */
+
+
+
+
+.logo-brand {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navbar-container {
+  align-self: center;
+}
+
+.navbar-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navbar-container li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-container li a:hover {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+/* Sign In Starts */
+
+.signIn-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  align-self: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.form-container input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.form-container button {
+  padding: 0.8rem 1.2rem;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background: #45a049;
+}
+/* Sign In Ends */
+
+/* Profile Starts */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+}
+
+.profile-container h2 {
+  columns: #4caf50;
+  margin-bottom: 1.2rem;
+}
+.profile-info {
+  width: 100%;
+}
+.profile-info p {
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+.profile-label {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Profile Ends */
+/* ================ */
+
+/* Products Start here */
+
+.products-container {
+  padding: 1.2rem;
+}
+
+.products-container h1 {
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.product {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  width: 24%;
+  background: #fff;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.product p {
+  color: #666;
+  margin: 0.4rem 0;
+}
+
+.product_image {
+  width: 100%;
+  height: 20rem;
+}
+
+.product__link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Products Ends here */
+
+/* Products Details Start here */
+
+.product-details {
+  padding: 2rem;
+  background: #f4f4f4;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 1.2rem auto;
+}
+
+.product-details h2 {
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.product-details__article {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-details__image {
+  width: 100%;
+  height: 20rem;
+}
+
+/* Products Details Ends here */
+
+/* Responsive Starts Here */
+
+@media (max-width: 920px) {
+
+
+  .product {
+    width: 49%;
+    padding: 2rem 2rem;
+  }
+  .product_image {
+    height: 15rem;
+  }
+}
+/*  */
+
+@media (max-width: 600px) {
+
+  .navbar-container ul {
+    gap: .6rem;
+  }
+
+  .logo-container {
+    font-size: 1.3rem;
+  }
+  .navbar-container li a {
+    font-size: 1.1rem;
+  }
+  
+  .profile-container {
+    padding: 0.8rem;
+  }
+  .profile-container h2 {
+    font-size: 1.5rem;
+  }
+  .profile-info p {
+    font-size: 1rem;
+  }
+  /*  */
+  .products {
+    row-gap: 2rem;
+  }
+  .product {
+    width: 100%;
+    padding: 2rem;
+  }
+  .product_image {
+    width: 100%;
+    height: 15rem;
+  }
+}
+/* Responsive Ends Here */
